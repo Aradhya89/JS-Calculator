@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="mainbox">
+        <div class="screenbox">
+            <div id="screenresult">0</div>
+        </div>
+
+        <div class="numpad">
+
+            <div class="numbers">
+                <button onclick='addexp("1")' class="box">1</button>
+                <button onclick='addexp("2")' class="box">2</button>
+                <button onclick='addexp("3")' class="box">3</button>
+                <button onclick='addexp("4")' class="box">4</button>
+                <button onclick='addexp("5")' class="box">5</button>
+                <button onclick='addexp("6")' class="box">6</button>
+                <button onclick='addexp("7")' class="box">7</button>
+                <button onclick='addexp("8")' class="box">8</button>
+                <button onclick='addexp("9")' class="box">9</button>
+                <button onclick='addexp("0")' class="box" id="zero">0</button>
+                <button onclick='addexp(".")' class="box" >.</button>
+
+            </div>
+
+
+            <div class="operators">
+                <div class="manuplator">
+                    <button onclick="cleartxt()" class="box topbtn">CLR</button>
+                    <button onclick="correcting()" class="box topbtn">DEL</button>
+                </div>
+                <button onclick='addexp("+")' class="box">+</button>
+                <button onclick='addexp("-")' class="box">-</button>
+                <button onclick='addexp("*")' class="box">*</button>
+                <button onclick='addexp("/")' class="box">/</button>
+                <button onclick='result()' class="box" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+    
+<script src = "index.js"></script>
+</body>
+
+</html>
